@@ -1,0 +1,667 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu</title>
+    <!--Google Fonts-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="Touche.css">
+
+    <!--CDN BOOTSTRAPCSS-->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+
+    <!--Bootstrap Icons-->
+    <link
+      rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css"
+    />
+
+    <!--OwlCarousel-->
+      <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+      integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+      integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <style>
+        .M{
+            
+        background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('image/menu1.jpg');
+        height: 500px;
+        opacity:1;
+        background-size:cover;
+        }
+        .Abc{
+        margin-top: 150px;
+    }
+    
+    
+    body{
+        margin:0px !important
+    }
+    .container-fluid{
+        margin:0px 0px 70px 0px !important
+    }
+    </style>
+</head>
+<body>
+    <!--Nav-->
+<div class="M container-fluid bg-black">
+
+  <nav class="position-relative">
+
+<div class="row-nav d-flex justify-content-center flex-wrap w-100" id="navbar-menu" style="transition: transform 0.3s ease, opacity 0.3s ease;">
+  <div class="F-c d-flex align-self-center gap-5 mt-3 col-12 col-md-auto justify-content-center">
+    <h5><a href="AboutUs.html" source="top" class="text-decoration-none text-uppercase fw-bold text-light" style="font-size:var(--Sm)">About Us</a></h5>
+    <h5><a href="Menu.html" source="top" class="text-decoration-none text-uppercase fw-bold text-light" style="font-size:var(--Sm)">Menu</a></h5>
+    <h5><a href="Reservation.html" source="top" class="text-decoration-none text-uppercase fw-bold text-light" style="font-size:var(--Sm)">Reservation</a></h5>
+  </div>
+
+  <div class="S-c text-light mt-3 col-12 col-md-auto text-center">
+    Touché
+  </div>
+
+  <div class="T-c d-flex align-self-center gap-5 mt-3 col-12 col-md-auto justify-content-center">
+    <h5><a href="News.HTML" source="top" class="text-decoration-none text-uppercase fw-bold text-light" style="font-size:var(--Sm)">News & Events</a></h5>
+    <h5><a href="Gallery.html" source="top" class="text-decoration-none text-uppercase fw-bold text-light" style="font-size:var(--Sm)">Gallery</a></h5>
+    <h5><a href="Contact.html" source="top" class="text-decoration-none text-uppercase fw-bold text-light" style="font-size:var(--Sm)">Contact</a></h5>
+    <button type="button" class="Day-Night rounded-4"></button>
+  </div>
+</div>
+
+      <h1 class="Name Abc fw-bold text-light text-center mb-3 fs-3">Our Menu</h1>
+</nav>
+</div>
+
+<!--Browse By categories-->
+    <!--Menu Options-->
+    <div class="row d-flex justify-content-center">
+        <div class="mt-5 col-12 d-flex justify-content-center font"><h1 class="fs-4">Browse by Categories</h1></div>
+        <div class="col-12 d-flex justify-content-center text-center fw-light"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione numquam<br> eos perferendis itaque hic unde, ad, laudantium minima.</p></div>
+    
+            <!--Menu-->
+                <!--Menu Options-->
+            <div id="tabs" class="col d-flex justify-content-center">
+                <ul class="nav gap-5">
+<li class="nav-item" role="presentation">
+    <div><a class="nav-link text-uppercase fs-6 fw-semibold" id="mains-tab" data-bs-toggle="tab" data-bs-target="#mains-content" type="button" role="tab" aria-controls="mains-content" aria-selected="true" href="#">MAINS</a></div>
+  </li>
+  <li class="nav-item" role="presentation">
+    <a class="nav-link text-uppercase fs-6 fw-semibold"  id="lunch-tab" data-bs-toggle="tab" data-bs-target="#lunch-content" role="tab" aria-controls="lunch-content" aria-selected="false" href="#">LUNCH</a>
+            
+  </li>
+  <li class="nav-item" role="presentation">
+    <a class="nav-link text-uppercase fs-6 fw-semibold" id="dinner-tab" data-bs-toggle="tab" data-bs-target="#dinner-content" role="tab" aria-controls="dinner-content" aria-selected="false" href="#">Dinner</a>
+  </li>
+  <li class="nav-item" role="presentation">
+    <a class="nav-link text-uppercase fs-6 fw-semibold" id="drinks-tab" data-bs-toggle="tab" data-bs-target="#drinks-content" role="tab" aria-controls="drinks-content" aria-selected="false" href="#">Drinks</a>
+</ul>
+</div>
+    <!--Menu-Content-->
+              <div class="tab-content" id="menuTabContent">
+            <!-- Mains Content -->
+            <div class="tab-pane fade show active" id="mains-content" role="tabpanel" aria-labelledby="mains-tab">
+                <div class="row g-4 d-flex justify-content-center">
+                    <!-- Item 1 -->
+                    <div class="col-md-5">
+                        <div class="d-flex align-items-center bg-white rounded shadow-sm p-3 mb-3">
+                            <img src="image/burger.jpg" alt="Burger" class="rounded me-3" style="width: 100px; height: 100px; object-fit: cover;">
+                            <div class="flex-grow-1">
+                                <div class="fw-semibold fs-5 text-dark mb-1 font">Lorem ipsum dolor sit amet</div>
+                                <div class="fs-6 text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi, obcaecati! Sapiente laudantium.</div>
+                            </div>
+                            <div class="fw-semibold fs-5 text-dark ms-3 flex-shrink-0 font">$15</div>
+                        </div>
+                    </div>
+                    <!-- Item 2 -->
+                    <div class="col-md-5">
+                        <div class="d-flex align-items-center bg-white rounded shadow-sm p-3 mb-3">
+                            <img src="image/donut.jpg" alt="Donut" class="rounded me-3" style="width: 100px; height: 100px; object-fit: cover;">
+                            <div class="flex-grow-1">
+                                <div class="fw-semibold fs-5 text-dark mb-1 font">Fusce id ante ut arcu</div>
+                                <div class="fs-6 text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi, obcaecati! Sapiente laudantium.</div>
+                            </div>
+                            <div class="fw-semibold fs-5 text-dark ms-3 flex-shrink-0 font">$23</div>
+                        </div>
+                    </div>
+                    <!-- Item 3 -->
+                    <div class="col-md-5">
+                        <div class="d-flex align-items-center bg-white rounded shadow-sm p-3 mb-3">
+                            <img src="image/Cro.jpg" alt="Croissant" class="rounded me-3 font" style="width: 100px; height: 100px; object-fit: cover;">
+                            <div class="flex-grow-1">
+                                <div class="fw-semibold fs-5 text-dark mb-1">Fusce sed dolor eget tortor</div>
+                                <div class="fs-6 text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi, obcaecati! Sapiente laudantium.</div>
+                            </div>
+                            <div class="fw-semibold fs-5 text-dark ms-3 flex-shrink-0 font">$16</div>
+                        </div>
+                    </div>
+                    <!-- Item 4 -->
+                    <div class="col-md-5">
+                        <div class="d-flex align-items-center bg-white rounded shadow-sm p-3 mb-3">
+                            <img src="image/break.jpg" alt="Breakfast" class="rounded me-3" style="width: 100px; height: 100px; object-fit: cover;">
+                            <div class="flex-grow-1">
+                                <div class="fw-semibold fs-5 text-dark mb-1 font">Lorem ipsum dolor sit amet</div>
+                                <div class="fs-6 text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi, obcaecati! Sapiente laudantium.</div>
+                            </div>
+                            <div class="fw-semibold fs-5 text-dark ms-3 flex-shrink-0 font">$15</div>
+                        </div>
+                    </div>
+                    <!-- Item 5 -->
+                    <div class="col-md-5">
+                        <div class="d-flex align-items-center bg-white rounded shadow-sm p-3 mb-3">
+                            <img src="image/curry.jpg" alt="Curry" class="rounded me-3" style="width: 100px; height: 100px; object-fit: cover;">
+                            <div class="flex-grow-1">
+                                <div class="fw-semibold fs-5 text-dark mb-1 font">Fusce id ante ut arcu</div>
+                                <div class="fs-6 text-muted ">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi, obcaecati! Sapiente laudantium.</div>
+                            </div>
+                            <div class="fw-semibold fs-5 text-dark ms-3 flex-shrink-0 font">$23</div>
+                        </div>
+                    </div>
+                    <!-- Item 6 -->
+                    <div class="col-md-5">
+                        <div class="d-flex align-items-center bg-white rounded shadow-sm p-3 mb-3">
+                            <img src="image/pan.jpg" alt="Pancakes" class="rounded me-3" style="width: 100px; height: 100px; object-fit: cover;">
+                            <div class="flex-grow-1">
+                                <div class="fw-semibold fs-5 text-dark mb-1 font">Fusce sed dolor eget tortor</div>
+                                <div class="fs-6 text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi, obcaecati! Sapiente laudantium.</div>
+                            </div>
+                            <div class="fw-semibold fs-5 text-dark ms-3 flex-shrink-0 font">$16</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Lunch Content (Hidden by default) -->
+            <div class="tab-pane fade" id="lunch-content" role="tabpanel" aria-labelledby="lunch-tab">
+                <div class="row g-4 d-flex justify-content-center">
+                    <!-- Lunch Item 1 -->
+                    <div class="col-md-5">
+                        <div class="d-flex align-items-center bg-white rounded shadow-sm p-3 mb-3">
+                            <img src="image/salad.jpg" alt="Salad" class="rounded me-3" style="width: 100px; height: 100px; object-fit: cover;">
+                            <div class="flex-grow-1">
+                                <div class="fw-semibold fs-5 text-dark mb-1">Healthy Green Salad</div>
+                                <div class="fs-6 text-muted">Fresh greens with a light vinaigrette.</div>
+                            </div>
+                            <div class="fw-semibold fs-5 text-dark ms-3 flex-shrink-0">$12</div>
+                        </div>
+                    </div>
+                    <!-- Lunch Item 2 -->
+                    <div class="col-md-5">
+                        <div class="d-flex align-items-center bg-white rounded shadow-sm p-3 mb-3">
+                            <img src="image/sandwich.jpg" alt="Sandwich" class="rounded me-3" style="width: 100px; height: 100px; object-fit: cover;">
+                            <div class="flex-grow-1">
+                                <div class="fw-semibold fs-5 text-dark mb-1">Classic Club Sandwich</div>
+                                <div class="fs-6 text-muted">Classic club sandwich with fries.</div>
+                            </div>
+                            <div class="fw-semibold fs-5 text-dark ms-3 flex-shrink-0">$14</div>
+                        </div>
+                    </div>
+                    <!-- Lunch Item 3 -->
+                    <div class="col-md-5">
+                        <div class="d-flex align-items-center bg-white rounded shadow-sm p-3 mb-3">
+                            <img src="image/soup.jpg" alt="Soup" class="rounded me-3" style="width: 100px; height: 100px; object-fit: cover;">
+                            <div class="flex-grow-1">
+                                <div class="fw-semibold fs-5 text-dark mb-1">Tomato Basil Soup</div>
+                                <div class="fs-6 text-muted">Warm and comforting with fresh basil.</div>
+                            </div>
+                            <div class="fw-semibold fs-5 text-dark ms-3 flex-shrink-0">$9</div>
+                        </div>
+                    </div>
+                    <!-- Lunch Item 4 -->
+                    <div class="col-md-5">
+                        <div class="d-flex align-items-center bg-white rounded shadow-sm p-3 mb-3">
+                            <img src="image/wrap.jpg" alt="Wrap" class="rounded me-3" style="width: 100px; height: 100px; object-fit: cover;">
+                            <div class="flex-grow-1">
+                                <div class="fw-semibold fs-5 text-dark mb-1">Chicken Caesar Wrap</div>
+                                <div class="fs-6 text-muted">Grilled chicken, romaine, Caesar dressing in a wrap.</div>
+                            </div>
+                            <div class="fw-semibold fs-5 text-dark ms-3 flex-shrink-0">$13</div>
+                        </div>
+                    </div>
+                    <!-- Lunch Item 5 -->
+                    <div class="col-md-5">
+                        <div class="d-flex align-items-center bg-white rounded shadow-sm p-3 mb-3">
+                            <img src="image/fish.jpg" alt="Taco" class="rounded me-3" style="width: 100px; height: 100px; object-fit: cover;">
+                            <div class="flex-grow-1">
+                                <div class="fw-semibold fs-5 text-dark mb-1">Fish Tacos</div>
+                                <div class="fs-6 text-muted">Crispy fish, slaw, and special sauce.</div>
+                            </div>
+                            <div class="fw-semibold fs-5 text-dark ms-3 flex-shrink-0">$15</div>
+                        </div>
+                    </div>
+                    <!-- Lunch Item 6 -->
+                    <div class="col-md-5">
+                        <div class="d-flex align-items-center bg-white rounded shadow-sm p-3 mb-3">
+                            <img src="image/personal.jpg" alt="Pizza" class="rounded me-3" style="width: 100px; height: 100px; object-fit: cover;">
+                            <div class="flex-grow-1">
+                                <div class="fw-semibold fs-5 text-dark mb-1">Personal Pizza</div>
+                                <div class="fs-6 text-muted">Your choice of toppings on a crispy crust.</div>
+                            </div>
+                            <div class="fw-semibold fs-5 text-dark ms-3 flex-shrink-0">$11</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Dinner Content (Hidden by default) -->
+            <div class="tab-pane fade" id="dinner-content" role="tabpanel" aria-labelledby="dinner-tab">
+                <div class="row g-4 d-flex justify-content-center">
+                    <!-- Dinner Item 1 -->
+                    <div class="col-md-5">
+                        <div class="d-flex align-items-center bg-white rounded shadow-sm p-3 mb-3">
+                            <img src="image/cream.jpg" alt="Pasta" class="rounded me-3" style="width: 100px; height: 100px; object-fit: cover;">
+                            <div class="flex-grow-1">
+                                <div class="fw-semibold fs-5 text-dark mb-1">Creamy Carbonara</div>
+                                <div class="fs-6 text-muted">Rich pasta with pancetta and egg yolk.</div>
+                            </div>
+                            <div class="fw-semibold fs-5 text-dark ms-3 flex-shrink-0">$18</div>
+                        </div>
+                    </div>
+                    <!-- Dinner Item 2 -->
+                    <div class="col-md-5">
+                        <div class="d-flex align-items-center bg-white rounded shadow-sm p-3 mb-3">
+                            <img src="image/grilled.jpg" alt="Salmon" class="rounded me-3" style="width: 100px; height: 100px; object-fit: cover;">
+                            <div class="flex-grow-1">
+                                <div class="fw-semibold fs-5 text-dark mb-1">Grilled Salmon Fillet</div>
+                                <div class="fs-6 text-muted">Perfectly grilled salmon with seasonal vegetables.</div>
+                            </div>
+                            <div class="fw-semibold fs-5 text-dark ms-3 flex-shrink-0">$25</div>
+                        </div>
+                    </div>
+                    <!-- Dinner Item 3 -->
+                    <div class="col-md-5">
+                        <div class="d-flex align-items-center bg-white rounded shadow-sm p-3 mb-3">
+                            <img src="image/steak.jpg" alt="Steak" class="rounded me-3" style="width: 100px; height: 100px; object-fit: cover;">
+                            <div class="flex-grow-1">
+                                <div class="fw-semibold fs-5 text-dark mb-1">Ribeye Steak</div>
+                                <div class="fs-6 text-muted">Juicy ribeye cooked to your preference.</div>
+                            </div>
+                            <div class="fw-semibold fs-5 text-dark ms-3 flex-shrink-0">$30</div>
+                        </div>
+                    </div>
+                    <!-- Dinner Item 4 -->
+                    <div class="col-md-5">
+                        <div class="d-flex align-items-center bg-white rounded shadow-sm p-3 mb-3">
+                            <img src="image/roasted2.jpg" alt="Chicken" class="rounded me-3" style="width: 100px; height: 100px; object-fit: cover;">
+                            <div class="flex-grow-1">
+                                <div class="fw-semibold fs-5 text-dark mb-1">Roasted Chicken</div>
+                                <div class="fs-6 text-muted">Herb-roasted half chicken with sides.</div>
+                            </div>
+                            <div class="fw-semibold fs-5 text-dark ms-3 flex-shrink-0">$22</div>
+                        </div>
+                    </div>
+                    <!-- Dinner Item 5 -->
+                    <div class="col-md-5">
+                        <div class="d-flex align-items-center bg-white rounded shadow-sm p-3 mb-3">
+                            <img src="image/veg.jpg" alt="Vegetable" class="rounded me-3" style="width: 100px; height: 100px; object-fit: cover;">
+                            <div class="flex-grow-1">
+                                <div class="fw-semibold fs-5 text-dark mb-1">Vegetarian Lasagna</div>
+                                <div class="fs-6 text-muted">Layers of fresh vegetables and rich cheese.</div>
+                            </div>
+                            <div class="fw-semibold fs-5 text-dark ms-3 flex-shrink-0">$17</div>
+                        </div>
+                    </div>
+                    <!-- Dinner Item 6 -->
+                    <div class="col-md-5">
+                        <div class="d-flex align-items-center bg-white rounded shadow-sm p-3 mb-3">
+                            <img src="image/lamb.jpg" alt="Lamb" class="rounded me-3" style="width: 100px; height: 100px; object-fit: cover;">
+                            <div class="flex-grow-1">
+                                <div class="fw-semibold fs-5 text-dark mb-1">Lamb Chops</div>
+                                <div class="fs-6 text-muted">Tender lamb chops with mint sauce.</div>
+                            </div>
+                            <div class="fw-semibold fs-5 text-dark ms-3 flex-shrink-0">$28</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Drinks Content (Hidden by default) -->
+            <div class="tab-pane fade" id="drinks-content" role="tabpanel" aria-labelledby="drinks-tab">
+                <div class="row g-4 d-flex justify-content-center">
+                    <!-- Drinks Item 1 -->
+                    <div class="col-md-5">
+                        <div class="d-flex align-items-center bg-white rounded shadow-sm p-3 mb-3">
+                            <img src="image/es.jpg" alt="Coffee" class="rounded me-3" style="width: 100px; height: 100px; object-fit: cover;">
+                            <div class="flex-grow-1">
+                                <div class="fw-semibold fs-5 text-dark mb-1">Espresso</div>
+                                <div class="fs-6 text-muted">Strong and aromatic coffee.</div>
+                            </div>
+                            <div class="fw-semibold fs-5 text-dark ms-3 flex-shrink-0">$4</div>
+                        </div>
+                    </div>
+                    <!-- Drinks Item 2 -->
+                    <div class="col-md-5">
+                        <div class="d-flex align-items-center bg-white rounded shadow-sm p-3 mb-3">
+                            <img src="image/orange.jpg" alt="Juice" class="rounded me-3" style="width: 100px; height: 100px; object-fit: cover;">
+                            <div class="flex-grow-1">
+                                <div class="fw-semibold fs-5 text-dark mb-1">Fresh Orange Juice</div>
+                                <div class="fs-6 text-muted">Freshly squeezed oranges.</div>
+                            </div>
+                            <div class="fw-semibold fs-5 text-dark ms-3 flex-shrink-0">$6</div>
+                        </div>
+                    </div>
+                    <!-- Drinks Item 3 -->
+                    <div class="col-md-5">
+                        <div class="d-flex align-items-center bg-white rounded shadow-sm p-3 mb-3">
+                            <img src="image/berry.jpg" alt="Smoothie" class="rounded me-3" style="width: 100px; height: 100px; object-fit: cover;">
+                            <div class="flex-grow-1">
+                                <div class="fw-semibold fs-5 text-dark mb-1">Berry Blast Smoothie</div>
+                                <div class="fs-6 text-muted">Mixed berries with yogurt.</div>
+                            </div>
+                            <div class="fw-semibold fs-5 text-dark ms-3 flex-shrink-0">$7</div>
+                        </div>
+                    </div>
+                    <!-- Drinks Item 4 -->
+                    <div class="col-md-5">
+                        <div class="d-flex align-items-center bg-white rounded shadow-sm p-3 mb-3">
+                            <img src="image/greeen.jpg" alt="Tea" class="rounded me-3" style="width: 100px; height: 100px; object-fit: cover;">
+                            <div class="flex-grow-1">
+                                <div class="fw-semibold fs-5 text-dark mb-1">Green Tea</div>
+                                <div class="fs-6 text-muted">A refreshing cup of green tea.</div>
+                            </div>
+                            <div class="fw-semibold fs-5 text-dark ms-3 flex-shrink-0">$3</div>
+                        </div>
+                    </div>
+                    <!-- Drinks Item 5 -->
+                    <div class="col-md-5">
+                        <div class="d-flex align-items-center bg-white rounded shadow-sm p-3 mb-3">
+                            <img src="lemon.jpg" alt="Lemonade" class="rounded me-3" style="width: 100px; height: 100px; object-fit: cover;">
+                            <div class="flex-grow-1">
+                                <div class="fw-semibold fs-5 text-dark mb-1">Sparkling Lemonade</div>
+                                <div class="fs-6 text-muted">Zesty lemonade with a fizz.</div>
+                            </div>
+                            <div class="fw-semibold fs-5 text-dark ms-3 flex-shrink-0">$5</div>
+                        </div>
+                    </div>
+                    <!-- Drinks Item 6 -->
+                    <div class="d-6 col-md-5">
+                        <div class="d-flex align-items-center bg-white rounded shadow-sm p-3 mb-3">
+                            <img src="milk.jpg" alt="Milkshake" class="rounded me-3" style="width: 100px; height: 100px; object-fit: cover;">
+                            <div class="flex-grow-1">
+                                <div class="fw-semibold fs-5 text-dark mb-1">Chocolate Milkshake</div>
+                                <div class="fs-6 text-muted">Creamy chocolate delight.</div>
+                            </div>
+                            <div class="fw-semibold fs-5 text-dark ms-3 flex-shrink-0">$8</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <hr>
+    <!--Our featured Dishes-->
+          <div class="row d-flex justify-content-center">
+                <div class="mt-5 col-12 d-flex justify-content-center font"><h1 class="fs-4">Featured Dishes</h1></div>
+                <div class="col-12 d-flex justify-content-center text-center fw-light"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione numquam<br> eos perferendis itaque hic unde, ad, laudantium minima.</p></div>
+
+<div class="container-md carousel-container mt-5"> 
+        <div id="menu-item-carousel" class="owl-carousel owl-theme">
+            <!-- Menu Item Card 1 -->
+            <div class="item">
+                <div class="card shadow-sm rounded-lg p-4 text-start mx-auto" style="background-color: white;"> 
+                    <img src="image/burger.jpg" alt="Delicious Burger" class="w-100 rounded-lg mb-3 menu-item-card-img "> 
+                    <div class="d-flex justify-content-between align-items-center mt-3"> 
+                        <div class="fw-semibold fs-5 text-dark mb-1">Classic Beef Burger</div>
+                        <div class="fw-semibold fs-5 text-dark"> $15</div> 
+                    </div>
+                    <div class="fs-6 text-muted lh-base"> 
+                        Juicy beef patty with cheese, bacon, and caramelized onions.
+                    </div>
+                </div>
+            </div>
+<!-- Menu Item Card 2 -->
+            <div class="item">
+                <div class="card shadow-sm rounded-lg p-4 text-start mx-auto" style="background-color: white;">
+                    <img src="image/es.jpg" alt="Spicy Tacos" class="w-100 rounded-lg mb-3 menu-item-card-img">
+                    <div class="d-flex justify-content-between align-items-center mt-3">
+                        <div class="fw-semibold fs-5 text-dark mb-1">Spicy Chicken Tacos</div>
+                        <div class="fw-semibold fs-5 text-dark"> $12</div>
+                    </div>
+                    <div class="fs-6 text-muted lh-base">
+                        Three soft tacos with grilled chicken, salsa, and jalapeños.
+                    </div>
+                </div>
+            </div>
+
+            <!-- Menu Item Card 3 -->
+            <div class="item">
+                <div class="card shadow-sm rounded-lg p-4 text-start mx-auto" style="background-color: white;">
+                    <img src="image/steak.jpg" alt="Vegan Salad" class="w-100 rounded-lg mb-3 menu-item-card-img ">
+                    <div class="d-flex justify-content-between align-items-center mt-3">
+                        <div class="fw-semibold fs-5 text-dark mb-1">Fresh Garden Salad</div>
+                        <div class="fw-semibold fs-5 text-dark"> $10</div>
+                    </div>
+                    <div class="fs-6 text-muted lh-base">
+                        Crisp mixed greens with seasonal vegetables and a light dressing.
+                    </div>
+                </div>
+            </div>
+
+            <!-- Menu Item Card 4 -->
+            <div class="item">
+                <div class="card shadow-sm rounded-lg p-4 text-start mx-auto" style="background-color: white;">
+                    <img src="image/cream.jpg" alt="Pasta Dish" class="w-100 rounded-lg mb-3 menu-item-card-img  ">
+                    <div class="d-flex justify-content-between align-items-center mt-3">
+                        <div class="fw-semibold fs-5 text-dark mb-1">Creamy Mushroom Pasta</div>
+                        <div class="fw-semibold fs-5 text-dark"> $18</div>
+                    </div>
+                    <div class="fs-6 text-muted lh-base">
+                        Fettuccine in a rich, creamy mushroom sauce with parmesan.
+                    </div>
+                </div>
+            </div>
+            <!--Menu 5-->
+            <div class="item">
+                <div class="card shadow-sm rounded-lg p-4 text-start mx-auto" style="background-color: white;">
+                    <img src="image/sandwich.jpg" alt="Sushi Platter" class="w-100 rounded-lg mb-3 menu-item-card-img ">
+                    <div class="d-flex justify-content-between align-items-center mt-3">
+                        <div class="fw-semibold fs-5 text-dark mb-1">Assorted Sushi Platter</div>
+                        <div class="fw-semibold fs-5 text-dark"> $25</div>
+                    </div>
+                    <div class="fs-6 text-muted lh-base">
+                        Freshly prepared sushi and sashimi selection.
+                    </div>
+                </div>
+            </div>
+
+            <!-- Menu Item Card 6 (New) -->
+            <div class="item">
+                <div class="card shadow-sm rounded-lg p-4 text-start mx-auto" style="background-color: white;">
+                    <img src="image/soup.jpg" alt="Chicken Wings" class="w-100 rounded-lg mb-3 menu-item-card-img ">
+                    <div class="d-flex justify-content-between align-items-center mt-3">
+                        <div class="fw-semibold fs-5 text-dark mb-1">Crispy BBQ Chicken Wings</div>
+                        <div class="fw-semibold fs-5 text-dark"> $14</div>
+                    </div>
+                    <div class="fs-6 text-muted lh-base">
+                        Smoky BBQ wings, perfect for sharing.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+       <!--Reservation-->
+        <div class="Res row d-flex justify-content-center">
+           <div class="mt-5 col-12 d-flex justify-content-center font"><h1 class="fs-4">Make Online Reservation</h1></div>
+            <div class="col-12 d-flex justify-content-center text-center fw-light"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione numquam<br> eos perferendis itaque hic unde, ad, laudantium minima.</p></div>
+    
+            <div class="form-container mt-5 d-flex justify-content-center">
+        <form>
+            <div class="row g-4">
+                <!-- Full Name -->
+                <div class="col-md-6">
+                    <div class="mb-3">
+                        <label for="fullName" class="form-label visually-hidden">Full name</label>
+                        <input type="text" class="form-control form-control-custom" id="fullName" placeholder="Full name">
+                    </div>
+                </div>
+                <!-- Persons Dropdown -->
+                <div class="col-md-6">
+                    <div class="mb-3">
+                        <label for="personsSelect" class="form-label visually-hidden">Number of Persons</label>
+                        <select class="form-select form-select-custom" id="personsSelect" aria-label="Select number of persons">
+                            <option selected>2 persons</option> <!-- Default selected option -->
+                            <option value="1">1 person</option>
+                            <option value="2">2 persons</option>
+                            <option value="3">3 persons</option>
+                            <option value="4">4 persons</option>
+                            <option value="5">5 persons</option>
+                        </select>
+                    </div>
+                </div>
+
+                <!-- Phone Number -->
+                <div class="col-md-6">
+                    <div class="mb-3">
+                        <label for="phoneNumber" class="form-label visually-hidden">Phone number</label>
+                        <input type="tel" class="form-control form-control-custom" id="phoneNumber" placeholder="Phone number">
+                    </div>
+                </div>
+                <!-- Date Input -->
+                <div class="col-md-6">
+                    <div class="mb-3 input-group input-group-custom">
+                        <label for="dateInput" class="form-label visually-hidden">Date</label>
+                        <input type="date" class="form-control form-control-custom" id="dateInput" value="2021-12-02">
+                        <span class="input-group-text input-group-text-custom"><i class="far fa-calendar-alt"></i></span>
+                    </div>
+                </div>
+
+                <!-- Email Address -->
+                <div class="col-md-6">
+                    <div class="mb-3">
+                        <label for="emailAddress" class="form-label visually-hidden">Email address</label>
+                        <input type="email" class="form-control form-control-custom" id="emailAddress" placeholder="Email address">
+                    </div>
+                </div>
+                <!-- Time Input -->
+                <div class="col-md-6">
+                    <div class="mb-3 input-group input-group-custom">
+                        <label for="timeInput" class="form-label visually-hidden">Time</label>
+                        <input type="time" class="form-control form-control-custom" id="timeInput" value="18:00">
+                        <span class="input-group-text input-group-text-custom"><i class="far fa-clock"></i></span>
+                    </div>
+                </div>
+            </div>
+            <div class="Box-Res text-center text-uppercase text-white fw-medium mx-auto mt-2 mb-5" style="font-size:var(--Sm)">
+                <a href="#7" class="text-decoration-none text-dark"> Make Reservation</a>
+            </div>
+         
+        </form>
+    </div>
+   </div>
+   <!--Footer-->
+    <footer class="footer-section">
+        <div class="container">
+            <div class="row ">
+                <!-- About Us Column -->
+                <div class="col-lg-4 col-md-6 mb-4 mb-lg-0">
+                    <h5 class="footer-heading ">ABOUT US</h5>
+                    <p class="footer-text text-secondary">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti dolorum, sint corporis nostrum, possimus unde eos vitae quasi quae.
+                    </p>
+                    <div class="copyright-line"></div>
+                    <p class="copyright-text mb-0 text-secondary">
+                        © 2021. touché. All rights reserved.
+                    </p>
+                </div>
+
+                <!-- Contact Info Column -->
+                <div class="col-lg-4 col-md-6 mb-4 mb-lg-0">
+                    <h5 class="footer-heading">CONTACT INFO</h5>
+                    <div class="contact-info-item">
+                        <i class="bi bi-geo-alt-fill"></i>
+                        <span class="footer-text text-secondary">1234 Altouch, Los Angeles, CA 90027-0000</span>
+                    </div>
+                    <div class="contact-info-item">
+                        <i class="bi bi-telephone-fill"></i>
+                        <span class="footer-text text-secondary">+1 987 654 3210</span>
+                    </div>
+                    <div class="contact-info-item">
+                        <i class="bi bi-envelope-at-fill text-secondary"></i>
+                        <a href="mailto:admin@domain.com" class="footer-text">admin@domain.com</a>
+                    </div>
+                </div>
+
+                <!-- Opening Hours Column -->
+                <div class="col-lg-4 col-md-12">
+                    <h5 class="footer-heading">OPENING HOURS</h5>
+                    <div class="opening-hours-item ">
+                        <span class="footer-text text-secondary">MONDAY - THURSDAY</span>
+                        <span class="footer-text text-secondary S-c">10:00 AM - 11:00 PM</span>
+                    </div>
+                    <div class="opening-hours-item text-secondary">
+                        <span class="footer-text text-secondary">FRIDAY - SUNDAY</span>
+                        <span class="footer-text text-secondary S-c">12:00 AM - 01:00 AM</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+     <!--BootstrapJavascript-->
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.min.js" integrity="sha384-7qAoOXltbVP82dhxHAUje59V5r2YsVfBafyUDxEdApLPmcdhBPg1DKg1ERo0BZlK" crossorigin="anonymous"></script>
+         <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+  <script src="https://code.jquery.com/ui/1.14.1/jquery-ui.js"></script>
+  <!--JQ-->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <!--OwlJS-->
+     <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+      integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script>
+    $('.owl-carousel').not('.testimonial-carousel').owlCarousel({
+  autoplayTimeout: 1000,
+  autoplayHoverPause: true,
+  autoplay: true,
+  loop: true,
+  margin: 10,
+  responsiveClass: true,
+  responsive: {
+    0: {
+      items: 1,
+      nav: true
+    },
+    600: {
+      items: 2,
+      nav: false
+    },
+    1000: {
+      items: 4,
+      nav: true,
+      loop: true
+    }
+  }
+});
+
+
+</script>
+<script>
+$('.testimonial-carousel').owlCarousel({
+  items: 1,
+  
+  margin: 20,
+  nav: true,
+  dots: true,
+  navText: ["<", ">"],
+ 
+  autoplayTimeout: 5000,
+  autoplayHoverPause: true
+});
+</script>
+
+
+</body>
+</html>
